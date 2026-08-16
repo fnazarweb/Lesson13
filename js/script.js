@@ -1,12 +1,26 @@
-const btn = document.querySelector(".js-get-data");
+// Кроки запиту до сервера:
+// 1) Пошук найближчого DNS-сервера для того щоб з текстової ip адреси зробити числову
+// 2) Установка з'єднання по цій числовій ip адресі
+// 3) Відправка даних - пересилка пакета від клієнта на сервер
+// 4) Отримання відповіді
+// 5) Отримання даних
+
+// REST API - певний набір правил на яких побудований бекенд (програма серверу) - шар між браузером і базою даних
+
+// GET - запит для отримання інформації
+// POST - для створення чогось нового
+// PUT, PATCH - для зміни вже існуючої інформації
+// DELETE - для видалення
+
+// const btn = document.querySelector(".js-get-data");
 
 // btn.addEventListener("click", getUrl);
 
 // function getUrl() {
-//   // return fetch("https://api.monobank.ua/bank/currency");
-//   return fetch("https://the-cocktail-db.p.rapidapi.com/search.php'");
+//   //   return fetch("https://api.monobank.ua/bank/currency");
+//   //   return fetch("https://the-cocktail-db.p.rapidapi.com/search.php'");
 //   //   fetch(
-//   //     "https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits"
+//   //     "https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits",
 //   //   );
 // }
 
@@ -39,7 +53,7 @@ const btn = document.querySelector(".js-get-data");
 
 // a().then(console.log);
 
-// let value = await promise
+// let value = await promise;
 // async function a() {
 //   let prom = new Promise((resolve, reject) => {
 //     setTimeout(() => resolve("Hello"), 1000);
@@ -60,14 +74,14 @@ const btn = document.querySelector(".js-get-data");
 
 // const monocurrency = async () => {
 //   let response = await fetch(
-//     "https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits"
+//     "https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits",
 //   );
 
 //   if (response.ok) {
 //     console.log("Ok");
 //     console.log("response", response.json());
 //   } else {
-//     console.log("Err: ", response.stteatus);
+//     console.log("Err: ", response.status);
 //   }
 // };
 
@@ -78,7 +92,7 @@ const btn = document.querySelector(".js-get-data");
 //   "X-Custom-Header": "custom value",
 // });
 
-// headers.has("Content-Type")
+// headers.has("Content-Type");
 
 // const postTest = async () => {
 //   let user = {
@@ -128,9 +142,9 @@ const btn = document.querySelector(".js-get-data");
 
 // try {
 //   let user = JSON.parse(json);
-//   // if (!user.city) {
-//   //   throw new SyntaxError("Нема міста");
-//   // }
+//   if (!user.city) {
+//     throw new SyntaxError("Нема міста");
+//   }
 //   console.log("start");
 // } catch (err) {
 //   console.log("Err", err.message);
@@ -139,7 +153,7 @@ const btn = document.querySelector(".js-get-data");
 // }
 
 // let socket = new WebSocket(
-//   "wss://javascript.info/article/websocket/demo/hello"
+//   "wss://javascript.info/article/websocket/demo/hello",
 // );
 
 // socket.onopen = function (e) {
